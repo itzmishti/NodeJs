@@ -18,3 +18,22 @@ fs.writeFile('example.txt',"This is a dummy file",(err)=>{
 
   }
 })
+// fs.rename('example.txt','example2.txt',(err)=>{
+//   if(err)
+//   console.log(err);
+//   else
+//   console.log('Successfully renamed the file');
+// });
+fs.appendFile('example.txt','Some data is being appended',(err)=>{
+  if(err)
+  console.log(err);
+  else
+  console.log('Success it is');
+});
+
+fs.unlink('example2.txt',(err)=>{
+  if(err)
+  console.log(err);
+  else
+  console.log('Success');
+})
