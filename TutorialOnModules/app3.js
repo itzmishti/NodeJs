@@ -1,6 +1,8 @@
+//Readline Module
+
 const readline =require ('readline');
 const r1=readline.createInterface({input :process.stdin,
-                          output:process.stdout});
+                                  output:process.stdout});
 let num1=Math.floor((Math.random()*10)+1);
 let num2=Math.floor((Math.random()*10)+1);
 let answer=num1+num2;
@@ -17,7 +19,7 @@ r1.question(`What is ${num1} + ${num2} ? \n`,(userInput)=>{
         r1.close();
       }
       else{
-          r1.setPrompt('Incorrect response of try again \n');
+          r1.setPrompt('Incorrect response please try again \n');
           r1.prompt();
       }
     });
